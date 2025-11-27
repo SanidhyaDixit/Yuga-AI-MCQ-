@@ -22,25 +22,7 @@ Tools	MongoDB Compass, VS Code
 📂 Project Structure
 Yuga
  ├── backend
- │   ├── config
- │   │   └── db.js
- │   ├── models
- │   │   └── Question.js
- │   ├── routes
- │   │   └── questionRoutes.js
- │   ├── seed
- │   │   └── seedQuestions.js
- │   ├── .env
- │   └── server.js
- │
- ├── frontend
- │   ├── src
- │   │   ├── components
- │   │   │   ├── QuizPage.js
- │   │   │   ├── ResultPage.js
- │   │   │   └── Timer.js
- │   │   ├── api.js
- │   │   ├── App.js
+
  │   │   ├── index.js
  │   │   └── index.css
  │
@@ -49,7 +31,7 @@ Yuga
 🚀 Installation & Setup
 🔹 Prerequisites
 
-Make sure you have installed:
+
 
 Node.js (v14+)
 
@@ -59,7 +41,7 @@ VS Code
 
 🔹 Backend Setup
 
-Open terminal and go to backend folder:
+
 
 cd backend
 
@@ -69,13 +51,13 @@ Install dependencies:
 npm install
 
 
-Create .env file inside backend:
+
 
 PORT=5000
 MONGO_URI=mongodb://127.0.0.1:27017/yuga_quiz_db
 
 
-Seed initial quiz questions:
+
 
 npm run seed
 
@@ -110,11 +92,7 @@ Open in browser:
 
 http://localhost:3000
 
-🔗 API Endpoints
-Method	Endpoint	Description
-GET	/api/questions	Fetch all quiz questions
-POST	/api/questions/submit	Submit answers and get score
-🧪 How It Works
+
 
 The frontend fetches questions from MongoDB using REST API.
 
